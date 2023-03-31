@@ -1,0 +1,188 @@
+
+*{
+    background-color:black;
+}
+.heading{
+    text-align: center;
+    padding: 10px 2px;
+    /* border: 1px solid black; */
+    margin-bottom: 50px;
+    /* margin: auto; */
+    border-radius: 19px;
+    background-color: #f0c5d1;
+    box-shadow: 5px 5px 17px red;
+   
+    
+}
+
+.neonText {
+    text-align: center;
+    animation: flicker 1.2s infinite alternate;
+    color: #fff;
+  }
+  
+  h1 {
+    /* font-size: 4.2rem;     */
+  }
+  
+  /* Flickering animation */
+  @keyframes flicker {
+      
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+  
+  
+  /* Additional styling */
+    
+  h2 {
+   /* font-size: 1.8rem; */
+  }
+  .container {
+    /* margin-top: 20vh; */
+  }
+  hr{
+    /* padding: 20px 20px; */
+    margin: 20px 100px;
+  }
+
+
+
+
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  #result {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+  
+  .keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 7px;
+  }
+  
+  button {
+    font-size: 25px;
+    padding: 13px;
+    background-color: #272727;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 3px 4px black;
+  }
+  
+  button:hover {
+    background-color: #683e3c;
+  }
+  
+
+
+
+
+
+  :root {
+    --shadow-color: #FF9E9E;
+    --shadow-color-light: white;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Archivo", sans-serif;
+  /*   background-color: #192824; */
+  }
+  
+  p {
+    margin: calc(50vh - 40px) auto 0 auto;
+    font-size: 65px;
+    text-transform: uppercase;
+    font-family: "Archivo Black", "Archivo", sans-serif;
+    font-weight: normal;
+    display: block;
+    height: auto;
+    text-align: center;
+  }
+  
+  .logo-1 {
+    color: rgb(200, 186, 186);
+    animation: neon 3s infinite;
+  }
+  
+  @keyframes neon {
+    0% {
+      text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+      0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+      0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+    }
+    50% {
+      text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+      0 0 5px var(--shadow-color-light), 0 0 15px var(--shadow-color-light), 0 0 25px var(--shadow-color-light),
+      0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 60px var(--shadow-color), 0 0 80px var(--shadow-color), 0 0 110px var(--shadow-color), 0 0 210px var(--shadow-color);
+    }
+    100% {
+      text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+      0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+      0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 480px) {
+    .keypad {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body>
+
+<div class="container">
+   <h1 class="neonText">CaLcUlAtOr_HuB</h1>
+</div>
+ <hr class="logo-1" >
+
+
+    <div class="calculator">
+      <input type="text" id="result" readonly>
+      <div class="keypad  ">
+        <button class="neonText " onclick="clearResult()">C</button>
+        <button  class="logo-1"   onclick="getResult('/')">/</button>
+        <button  class="logo-1"   onclick="getResult('*')">*</button>
+        <button   class="logo-1"  onclick="getResult('-')">-</button>
+        <button   class="logo-1"  onclick="getResult('7')">7</button>
+        <button   class="logo-1"  onclick="getResult('8')">8</button>
+        <button   class="logo-1"  onclick="getResult('9')">9</button>
+        <button  class="logo-1"   onclick="getResult('+')">+</button>
+        <button  class="logo-1"   onclick="getResult('4')">4</button>
+        <button  class="neonText "   onclick="getResult('5')">5</button>
+        <button  class="logo-1"   onclick="getResult('6')">6</button>
+        <button  class="logo-1"   onclick="getResult('1')">1</button>
+        <button  class="logo-1"   onclick="getResult('2')">2</button>
+        <button   class="logo-1"  onclick="getResult('3')">3</button>
+        <button   class="logo-1"  onclick="getResult('0')">0</button>
+        <button  class="neonText "   onclick="getResult('.')">.</button>
+        <button class="logo-1" onclick="calculate()">=</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+
+
+<!-- 
+    <p class="logo-1">
+        Neon lights
+      </p> -->
+      
+  </body>
+</html>
